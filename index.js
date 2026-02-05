@@ -246,7 +246,7 @@ async function price(smbl) {
 
         return {
             symbol: meta.symbol,
-            close: lastClose || meta.regularMarketPrice,
+            price: lastClose || meta.regularMarketPrice,
             currency: meta.currency,
             name: meta.longName || meta.shortName,
             exchangeName: meta.exchangeName,
